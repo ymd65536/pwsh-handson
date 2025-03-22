@@ -6,7 +6,7 @@
 $PSVersionTable.PSVersion
 ```
 
-## Windows PowerShell と PowerShell の違い
+## Windows PowerShellとPowerShellの違い
 
 Windows PowerShellとPowerShellは異なる製品です。
 
@@ -22,3 +22,17 @@ PowerShellの特徴は以下の通りです。
 - PowerShell は、.NET Core という新しいバージョンの .NET 上に構築される
 
 [参考：what-is-windows-powershell](https://learn.microsoft.com/ja-jp/powershell/scripting/what-is-windows-powershell?view=powershell-7.5)
+
+## PowerShellの基本
+
+PowerShellのコマンドはコマンドレットと呼ばれます。
+コマンドレットの特徴は以下の通りです。
+
+- ネイティブのPowerShellコマンドであり、スタンドアロンの実行可能ファイルではありません
+- 必要に応じて読み込むことができる PowerShellモジュールにまとめられている
+- 任意のコンパイルされた .NET 言語または PowerShellスクリプト言語自体で記述可能
+- PowerShellのコマンドレット名には、"動詞-名詞" という名前のペアが使われる
+
+```powershell
+Get-Command
+```
